@@ -44,3 +44,10 @@ To run that file will output:
 
 **Note:** on Windows and with a shared version of libOpenCOR, the system ``PATH`` must contain the directory where ``libOpenCOR.dll`` is located, i.e. ``C:\Program Files (x86)\libOpenCOR\bin``.
 Alternatively, ``libOpenCOR.dll`` can be copied to the directory where ``cpptest.exe`` is located, i.e. ``build\Release``.
+
+To uninstall libOpenCOR, enter the following on the command line:
+
+.. code-block:: bash
+
+    cd libOpenCOR/build
+    cmake --build . --target uninstall
