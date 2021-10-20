@@ -9,10 +9,22 @@ It can be downloaded `here <https://opencor.ws/libopencor/downloads>`__.
 
 Various information about libOpenCOR and its use can be found in the following pages:
 
+- :ref:`installation_index`
+
+  - :ref:`From source <installation_fromSource>`
+
+..
+
 - `Supported platforms <https://opencor.ws/libopencor/supportedPlatforms.html>`__
 
 ..
 
 - `Licensing <https://opencor.ws/libopencor/licensing.html>`__
+
+.. toctree::
+   :hidden:
+
+   installation/index
+   installation/fromSource
 
 Finally, here is how you can `contact us <https://opencor.ws/libopencor/contactUs.html>`__.

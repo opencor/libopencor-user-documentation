@@ -24,3 +24,7 @@ FetchContent_Populate(sphinx-theme)
 include(${SPHINX_THEME_DIR}/cmake/common.cmake)
 
 build_documentation(user 54 96 146)
+
+# Copy our resources to the build directory.
+
+file(COPY res DESTINATION ${CMAKE_BINARY_DIR}/html)
