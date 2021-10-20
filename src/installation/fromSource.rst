@@ -7,7 +7,7 @@
 C++
 ---
 
-To build and install the C++ version of libOpenCOR, enter the following from a command prompt / terminal:
+To build and install the C++ version of libOpenCOR, enter the following on the command line:
 
 .. code-block:: bash
 
@@ -22,7 +22,7 @@ To build and install the C++ version of libOpenCOR, enter the following from a c
 | **Note #1:** on Windows, ``cmake --build .`` must be replaced with ``cmake --build . --config Release``.
 | **Note #2:** this will generate a shared version of libOpenCOR. To generate a static version, ``cmake ..`` must be replaced with ``cmake -DSHARED_LIBS=OFF ..``.
 
-To test the installation, download and unzip `this file <../res/installation/cpptest.zip>`__, and then enter the following from a command prompt / terminal:
+To test the installation, download and unzip `this file <../res/installation/cpptest.zip>`__, and then enter the following on the command line:
 
 .. code-block:: bash
 
