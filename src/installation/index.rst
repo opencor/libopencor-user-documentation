@@ -6,4 +6,4 @@
 
 libOpenCOR can be installed:
 
-- :ref:`installation_fromSource`
+- :ref:`from source <installation_fromSource>`

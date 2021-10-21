@@ -11,7 +11,7 @@ Various information about libOpenCOR and its use can be found in the following p
 
 - :ref:`installation_index`
 
-  - :ref:`From source <installation_fromSource>`
+  - :ref:`from source <installation_fromSource>`
 
 ..
 

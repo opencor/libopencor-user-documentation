@@ -1,8 +1,8 @@
 .. _installation_fromSource:
 
-=============
- From source
-=============
+==========================
+ Installation from source
+==========================
 
 C++
 ---
