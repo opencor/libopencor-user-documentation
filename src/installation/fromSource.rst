@@ -7,35 +7,31 @@
 C++
 ---
 
-To build and install the C++ version of libOpenCOR, enter the following on the command line:
+To build and install the C++ version of libOpenCOR from source, enter the following on the command line:
 
 .. code-block:: bash
 
     git clone --depth 1 https://github.com/opencor/libopencor.git libOpenCOR
     cd libOpenCOR
-    mkdir build
-    cd build
-    cmake ..
-    cmake --build .
-    cmake --install .
+    cmake -S . -B build
+    cmake --build build
+    cmake --install build
 
-| **Note #1:** on Windows, ``cmake --build .`` must be replaced with ``cmake --build . --config Release``.
-| **Note #2:** this will generate a shared version of libOpenCOR. To generate a static version, ``cmake ..`` must be replaced with ``cmake -DSHARED_LIBS=OFF ..``.
+| **Note #1:** on Windows, ``cmake --build build`` must be replaced with ``cmake --build build --config Release``.
+| **Note #2:** this will generate a shared version of libOpenCOR. To generate a static version, ``cmake -S . -B build`` must be replaced with ``cmake -S . -B build -DSHARED_LIBS=OFF``.
 
 To test the installation, download and unzip `this file <../res/installation/cpptest.zip>`__, and then enter the following on the command line:
 
 .. code-block:: bash
 
     cd cpptest
-    mkdir build
-    cd build
-    cmake ..
-    cmake --build .
+    cmake -S . -B build
+    cmake --build build
 
-| **Note #1:** on Windows, ``cmake ..`` must be replaced with ``cmake -DCMAKE_PREFIX_PATH="C:\\Program Files (x86)\\libOpenCOR\\cmake" ..``.
-| **Note #2:** on Windows, ``cmake --build .`` must be replaced with ``cmake --build . --config Release``.
+| **Note #1:** on Windows, ``cmake -S . -B build`` must be replaced with ``cmake -S . -B build -DCMAKE_PREFIX_PATH="C:\\Program Files (x86)\\libOpenCOR\\cmake"``.
+| **Note #2:** on Windows, ``cmake --build build`` must be replaced with ``cmake --build build --config Release``.
 
-This will result in a file called ``Release\cpptest.exe`` on Windows and ``cpptest`` on Linux and macOS.
+This will result in a file called ``build\Release\cpptest.exe`` on Windows and ``build\cpptest`` on Linux and macOS.
 To run that file will output:
 
 .. code-block:: bash
@@ -49,5 +45,4 @@ To uninstall libOpenCOR, enter the following on the command line:
 
 .. code-block:: bash
 
-    cd libOpenCOR/build
-    cmake --build . --target uninstall
+    cmake --build build --target uninstall
