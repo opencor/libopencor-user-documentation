@@ -4,6 +4,13 @@
  Installation from source
 ==========================
 
+libOpenCOR can be installed from source for use from:
+
+- :ref:`C++ <installation_fromSource_cpp>`; and
+- :ref:`Python <installation_fromSource_python>`.
+
+.. _installation_fromSource_cpp:
+
 C++
 ---
 
@@ -46,3 +53,40 @@ To uninstall libOpenCOR, enter the following on the command line:
 .. code-block:: bash
 
     cmake --build build --target uninstall
+
+.. _installation_fromSource_python:
+
+Python
+------
+
+To build and install the Python version of libOpenCOR from source, enter the following on the command line:
+
+.. code-block:: bash
+
+    pip install git+https://github.com/opencor/libopencor.git
+
+or:
+
+.. code-block:: bash
+
+    git clone --depth 1 https://github.com/opencor/libopencor.git libOpenCOR
+    cd libOpenCOR
+    pip install .
+
+To test the installation, download `this file <../res/installation/test_install.py>`__, and then enter the following on the command line:
+
+.. code-block:: bash
+
+    python test_install.py
+
+To run that Python script will output:
+
+.. code-block:: bash
+
+    Hello libOpenCOR 0.1.0!
+
+To uninstall libOpenCOR, enter the following on the command line:
+
+.. code-block:: bash
+
+    pip uninstall -y libopencor
