@@ -45,7 +45,7 @@ To test the installation, download and unzip `this file <../res/installation/cpp
     .. code-block:: bash
 
         cd cpptest
-        cmake -S . -B build -DCMAKE_PREFIX_PATH="C:\\Program Files (x86)\\libOpenCOR\\cmake"
+        cmake -S . -B build -DCMAKE_PREFIX_PATH="C:\Program Files (x86)\libOpenCOR\cmake"
         cmake --build build --config Release
 
     This will result in a file called ``build\Release\cpptest.exe``.
@@ -66,7 +66,7 @@ To test the installation, download and unzip `this file <../res/installation/cpp
         cmake -S . -B build
         cmake --build build
 
-    This will result in a file called ``build\cpptest``.
+    This will result in a file called ``build/cpptest``.
     To run this file will output:
 
     .. code-block::

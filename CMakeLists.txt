@@ -22,7 +22,7 @@ FetchContent_Declare(sphinx-theme
 
 FetchContent_Populate(sphinx-theme)
 
-# Build the user documentation for OpenCOR.
+# Build the user documentation for libOpenCOR.
 
 include(${SPHINX_THEME_DIR}/cmake/common.cmake)
 
