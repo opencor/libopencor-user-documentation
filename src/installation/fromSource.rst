@@ -22,11 +22,11 @@ To build and install the C++ version of libOpenCOR from source, enter the follow
 
         git clone --depth 1 https://github.com/opencor/libopencor.git libOpenCOR
         cd libOpenCOR
-        cmake -S . -B build -A x64
+        cmake -S . -B build
         cmake --build build --config Release
         cmake --install build
 
-    **Note:** this will generate a shared version of libOpenCOR. To generate a static version, ``cmake -S . -B build -A x64`` must be replaced with ``cmake -S . -B build -A x64 -DSHARED_LIBS=OFF``.
+    **Note:** this will generate a shared version of libOpenCOR. To generate a static version, ``cmake -S . -B build`` must be replaced with ``cmake -S . -B build -DSHARED_LIBS=OFF``.
 
 .. tab:: Linux / macOS
 
@@ -47,7 +47,7 @@ To test the installation, download and unzip `this file <../res/installation/cpp
     .. code-block:: bash
 
         cd cpptest
-        cmake -S . -B build -A x64 -DCMAKE_PREFIX_PATH="C:\Program Files\libOpenCOR\cmake"
+        cmake -S . -B build -DCMAKE_PREFIX_PATH="C:\Program Files\libOpenCOR\cmake"
         cmake --build build --config Release
 
     This will result in a file called ``build\Release\cpptest.exe``.
