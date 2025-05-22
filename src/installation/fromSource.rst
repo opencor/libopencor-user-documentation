@@ -55,7 +55,7 @@ To test the installation, download and unzip `this file <../res/installation/cpp
 
     .. code-block::
 
-        Hello libOpenCOR 0.1.0!
+        Hello libOpenCOR 0.20250501.0!
 
     **Note:** with a shared version of libOpenCOR, the system ``PATH`` must contain the directory where ``libOpenCOR.dll`` is located, i.e. ``C:\Program Files\libOpenCOR\bin``.
     Alternatively, ``libOpenCOR.dll`` can be copied to the directory where ``cpptest.exe`` is located, i.e. ``build\Release``.
@@ -73,7 +73,7 @@ To test the installation, download and unzip `this file <../res/installation/cpp
 
     .. code-block::
 
-        Hello libOpenCOR 0.1.0!
+        Hello libOpenCOR 0.20250501.0!
 
 To uninstall libOpenCOR, enter the following on the command line:
 
@@ -110,7 +110,7 @@ To run that Python script will output:
 
 .. code-block:: bash
 
-    Hello libOpenCOR 0.1.0!
+    Hello libOpenCOR 0.20250501.0!
 
 To uninstall libOpenCOR, enter the following on the command line:
 
